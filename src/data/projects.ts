@@ -42,6 +42,17 @@ export const projectsData: Project[] = [
     liveUrl: 'https://is-it-bis.vercel.app/',
     githubUrl: 'https://github.com/DanielPallin/isitbis',
     featured: true,
+  },
+  {
+    id: 'the-saga-chapter-III',
+    title: 'The Saga - Chapter III',
+    category: 'React',
+    description: 'En högpresterande landningssida för ett mytiskt RPG byggt i Unreal Engine 5. Projektet fokuserar på djup immersion genom cinematiska animationer, atmosfärisk ljudbild och en sömlös användarupplevelse optimerad för extremt hög Lighthouse-score.',
+    technologies: ['React', 'TypeScript', 'Tailwind', 'Framer Motion', 'Web3Forms'],
+    imageUrl: '/projects/the-saga.png',
+    liveUrl: 'https://the-saga-chapter-iii.vercel.app/',
+    githubUrl: 'https://github.com/DanielPallin/TheSagaChapterIII',
+    featured: true,
   }
 ];
 

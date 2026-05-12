@@ -13,7 +13,7 @@ export default function Portfolio() {
   );
 
   return (
-    <section id="projects" className="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto 2xl:max-w-[120rem]">
+    <section id="projects" className="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto 2xl:max-w-480">
       <div className="space-y-12">
         
         {/* Rubrik & Introduktion */}
@@ -41,7 +41,7 @@ export default function Portfolio() {
           ))}
         </div>
 
-        {/* Projekt-Grid med Framer Motion */}
+        {/* Framer Motion */}
         <motion.div 
           layout
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
@@ -63,10 +63,10 @@ export default function Portfolio() {
                     src={project.imageUrl} 
                     alt={`Skärmdump av ${project.title}`} 
                     className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500"
-                    loading="lazy" // Bra för Lighthouse prestanda
+                    loading="lazy"
                   />
-                  {/* Overlay som syns vid hover på desktop */}
-                  <div className="absolute inset-0 bg-slate-950/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4 hidden md:flex">
+                  {}
+                  <div className="absolute inset-0 bg-slate-950/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 items-center justify-center gap-4 hidden md:flex">
                     {project.liveUrl && (
                       <a 
                         href={project.liveUrl} 
@@ -74,7 +74,7 @@ export default function Portfolio() {
                         rel="noopener noreferrer"
                         className="p-3 bg-blue-600 rounded-full text-white hover:bg-blue-500 transition-colors"
                         aria-label={`Besök ${project.title} live`}
-                        tabIndex={-1} // Göm från tab-ordningen så vi inte tabbar dubbelt
+                        tabIndex={-1}
                       >
                         <ExternalLink size={20} />
                       </a>
@@ -84,12 +84,11 @@ export default function Portfolio() {
                         href={project.githubUrl} 
                         target="_blank" 
                         rel="noopener noreferrer"
-                        // Lade till flex, items-center och justify-center för att centrera bilden perfekt i den runda knappen
                         className="p-3 bg-slate-800 rounded-full text-white hover:bg-slate-700 transition-colors flex items-center justify-center"
                         aria-label={`Se källkoden för ${project.title}`}
                         tabIndex={-1}
                     >
-                        {/* Se till att src matchar det exakta filnamnet på din logga i public-mappen */}
+                        {}
                         <img 
                         src="/github-logo.png" 
                         alt="GitHub" 
@@ -101,7 +100,7 @@ export default function Portfolio() {
                 </div>
 
                 {/* Innehållssektion */}
-                <div className="p-6 flex flex-col flex-grow space-y-4">
+                <div className="p-6 flex flex-col grow space-y-4">
                   <div className="space-y-2">
                     <h3 className="text-xl font-bold text-slate-50">{project.title}</h3>
                     <p className="text-slate-400 text-sm line-clamp-3">
