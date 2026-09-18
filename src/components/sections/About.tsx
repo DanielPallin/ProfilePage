@@ -24,7 +24,10 @@ export default function About() {
               Jag är en driven Fullstack-utvecklare under utbildning som älskar att bygga logiska, snygga och användarvänliga webbapplikationer. Just nu letar jag efter en LIA-plats (Lärande i Arbete) inför Januari 2027 där jag kan bidra med ny energi och modern kod.
             </p>
             <p>
-              Min resa började med en nyfikenhet för hur saker fungerar bakom kulisserna. Idag spenderar jag mina dagar med att skriva olika tech-stacks, bygga komponenter i React och nörda ner mig i modern CSS och UX-design.
+              Min resa började med en nyfikenhet för hur saker fungerar bakom kulisserna. Idag spenderar jag mina dagar med att förbättra egna projekt, bygga nya idéer och lära mig nya verktyg.
+            </p>
+            <p>
+              Favoritstack: <span className="text-blue-400 font-medium">React, TypeScript, Node.js, Next.js, TailwindCSS, PostgreSQL</span>
             </p>
           </div>
 
@@ -83,7 +86,9 @@ export default function About() {
               <div className="h-px w-full bg-white/10 mb-3"></div>
               
               <p className="text-blue-400 font-bold text-sm mb-1">LIA-period 2:</p>
-              <p className="text-slate-200 text-xs font-medium">2027: 26 Apr - 1 Okt (23v)</p>
+              <p className="text-slate-200 text-xs font-medium">2027: 26 Apr - 11 Juni (7v)</p>
+              <p className="text-slate-200 text-xs font-medium">Sommaruppehåll (Öppen för fortsatt arbete)</p>
+              <p className="text-slate-200 text-xs font-medium">2027: 9 Aug - 1 Okt (8v)</p>
             </div>
           </div>
         </motion.div>
