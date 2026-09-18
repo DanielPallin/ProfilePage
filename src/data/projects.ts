@@ -19,7 +19,7 @@ export const projectsData: Project[] = [
     technologies: ['TypeScript', 'React', 'Supabase'],
     imageUrl: '/projects/PinQuo2.png',
     liveUrl: 'https://pinquo.app/',
-    githubUrl: 'https://github.com/DanielPallin/pinquo',
+    githubUrl: 'https://github.com/DanielPallin/pinquo-web',
     featured: true,
   },
   {
